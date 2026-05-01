@@ -10,7 +10,7 @@ An end-to-end automated Data Engineering pipeline designed to extract, transform
 ---
 
 ## **Architecture Diagram**
-- ``` mermaid
+``` mermaid
   graph TD
     subgraph Data Source
         API[Flashscore Live-Score API]
@@ -31,7 +31,7 @@ An end-to-end automated Data Engineering pipeline designed to extract, transform
         VLD -->|Yes| CSV[(Local CSV Partitioned by Date)]
         VLD -->|No Match / ZONK| SKIP[Skip Task / Graceful Degradation]
     end
->
+```
 
 ---
 
